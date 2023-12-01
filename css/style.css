@@ -1,0 +1,238 @@
+/* Initially hide the skip link */
+.skip {
+    position: absolute;
+    top: -1000px;
+    color: #FAAF1D;
+    background-color: #000;
+}
+
+/* Make it visible when focused using keyboard (Tab) */
+.skip:focus {
+    top: 20px;
+    left: 10px; 
+    background-color: #000; 
+    padding: 5px;
+    z-index: 9999;
+    border: 1px solid #000;
+}
+
+a{
+    color:white;
+}
+
+/* mobiile first */
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 30px;
+    color:#fff;
+    background-color: #000;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+#title{
+    text-align: center;
+}
+
+#intro{
+    text-align: left;
+    margin: 50px;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image_container {
+    text-align: center;
+}
+
+#image_container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+nav {
+    text-align: center;
+}
+
+
+.nav_link {
+    list-style: none; 
+    margin: 10px;
+
+}
+
+.nav_link li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav_link li a {
+    text-decoration: none;
+    color: #FAAF1D;
+    font-size: 18px;
+}
+
+ul.nav_link li.active a {
+    text-decoration: underline;
+}
+
+ul.nav_link li a:hover {
+    text-decoration: underline;
+}
+
+.nav_link li a:focus{
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #FAAF1D;
+    border-radius: 2em;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 80px 0 20px 0;
+} 
+
+.method{
+    margin-top: 30px;
+}
+
+.methodsection{
+    margin-top: 100px;
+}
+
+button{
+    margin: 15px 15px;
+    text-align: center;
+    cursor: pointer;
+    color:#FAAF1D;
+    background-color: black;
+    padding: 2px 10px;
+    font-size: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    font-family: t;
+}
+
+#button1 {
+    box-shadow: 3px 3px 20px 3px white;
+}
+
+
+.methodimg{
+
+    max-width: 100%;
+    height: auto;
+}
+
+.methoddesc{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+*{
+    align-items: center;
+    align-content: center;
+}
+
+.brazilinfo{
+    text-align: left;
+    background-image: url(../image/brazil.png);
+    background-size: cover;
+    padding: 80px;
+}
+
+.ethiopiainfo{
+    text-align: left;
+    background-image: url(../image/ethiopia.png);
+    background-size: cover;
+    padding: 80px;
+}
+
+.guatemalainfo{
+    text-align: left;
+    background-image: url(../image/guatemala.jpg);
+    background-size: cover;
+    padding: 80px;
+}
+
+.kenyainfo{
+    text-align: left;
+    background-image: url(../image/kenya.jpg);
+    background-size: cover;
+    padding: 80px;
+}
+
+.mexicoinfo{
+    text-align: left;
+    background-image: url(../image/mexico.png);
+    background-size: cover;
+    padding: 80px;
+}
+
+.tanzaniainfo{
+    text-align: left;
+    background-image: url(../image/tan.png);
+    background-size: cover;
+    padding: 80px;
+}
+
+
+.origininfoimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.origininfoimg img {
+    width: 30%;
+    margin: 30px;
+    border: 50px solid white;
+}
+
+
+
+
+
+
+@media screen and (min-width: 700px){
+    nav {
+        text-align: right;;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #image_container{
+        display: none;
+    }
+
+    #mobilemap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #mobilemap img{
+        width: 50%;
+        height: auto;
+        margin: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #mobilemap{
+        display: none;
+    }
+}

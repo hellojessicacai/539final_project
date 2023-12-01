@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="image/icon.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Coffee Origin</title>
+</head>
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul class="nav_link">
+                <li class="active"><a href = "index.html">Map</a></li>
+                <li><a href = "https://www.youtube.com/watch?v=poyMr9uOje0" target="_blank">Documentary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="intro">
+            <h1 id="title">Coffee Origins World Map</h1>
+            <p id="intro">The environment in which the coffee plant grows can affect the flavor of your coffee. Understanding the origin of your coffee plays a crucial role in determining your preferred flavor. This knowledge provides insights into the quality and consistency of the beans, allowing you to pinpoint the exact source of your coffee.Some of the most prominent regions where coffee is sourced are Ethiopia, Guatemala, Brazil, Kenya, Mexico, and Tanzania. Click on the map to learn more about these origins.</p>
+        </div>
+
+        <div id="image_container">
+            <img src="image/map.png" usemap="#image_map" alt="Coffee Origin World Map">
+            <map name="image_map">
+                <area alt="Mexico" title="Mexico" href="mexico.html" coords="173,284 186,325 217,358 232,364 246,368 268,341 239,349 233,321 212,294 " shape="polygon">
+                <area alt="Ethiopia" title="Ethiopia" href="ethiopia.html" coords="717,376 702,374 690,396 712,413 733,408 743,396 723,388 723,388 723,388 " shape="polygon">
+                <area alt="Guatemala" title="Guatemala" href="guatemala.html" coords="254,374 261,365 257,357 243,372 " shape="polygon">
+                <area alt="Brazil" title="Brazil" href="brazil.html" coords="449,450 391,430 389,413 328,428 313,459 345,477 371,501 389,531 381,544 398,555 435,504 " shape="polygon">
+                <area alt="Kenya" title="Kenya" href="kenya.html" coords="720,413 710,413 697,408 693,429 714,440 720,432 " shape="polygon">
+                <area alt="Tanzania" title="Tanzania" href="tanzania.html" coords="696,467 717,467 713,445 692,430 678,447 685,460 " shape="polygon">
+            </map>
+
+        </div>
+
+        <div id="mobilemap">
+            <a href="brazil.html"><img src="image/brazilmap 1.png" alt="Brazil"></a>
+            <a href="ethiopia.html"><img src="image/ethiopiamap 1.png" alt="Ethiopia"></a>
+            <a href="guatemala.html"><img src="image/guatemalamap 1.png" alt="Guatemala"></a>
+            <a href="kenya.html"><img src="image/kenyamap 1.png" alt="Kenya"></a>
+            <a href="mexico.html"><img src="image/mexicomap 1.png" alt="Mexico"></a>
+            <a href="tanzania.html"><img src="image/tanzaniamap 1.png" alt="Tanzania"></a>
+        </div>
+
+        <div class="methodsection">
+            <h2>Coffee Processing Method</h2>
+            <div id="processing method">
+                <div class="button">
+                    <button id="button1">Dry/Natural Processing</button>
+                    <button id="button2">Wet Processing</button>
+                    <button id="button3">Pulped/Honey Processing</button>
+                </div>
+                <div id="method1" class="method">
+                    <img class="methodimg" src="image/natural processing.jpeg" alt='A group of women are processing coffee beens.'>
+                    <p class="methoddesc">Frequently labeled as the most ancient coffee processing technique, natural processing involves allowing the coffee cherry to naturally dry under the sun, resulting in a distinct 'natural' flavor. This approach is best suited for arid climates.</p>
+                </div>
+
+                <div id="method2" class="method" style="display: none;">
+                    <img class="methodimg" src='image/wet processing.jpeg' alt='A men is washing coffee beans.'>
+                    <p class="methoddesc">This approach entails immersing the beans in water for approximately a week, a stage commonly referred to as fermentation. Precision in timing is essential to prevent the development of excessively sour or moldy tastes. The fermentation of the beans plays a pivotal role in enhancing the coffee bean's fruity and acidic flavors.</p>
+                </div>
+
+                <div id="method3" class="method" style="display: none;">
+                    <img class="methodimg" src='image/honey processing.jpeg' alt='Honey processed coffee bean has a lighter and yellow color.'>
+                    <p class="methoddesc">This method combines elements of both natural and wet processing. After removing the outer layer of the coffee cherry, the beans undergo immediate washing and drying to prevent bacterial growth from the mucilage sugars. The chosen processing method significantly influences the taste, ranging from sour/fruity to sweet and sugary. The coffee's origin and processing play a crucial role in determining preferred flavor profiles.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <p>SI 539 Jessica Cai &copy; 2023</p>
+    </footer>
+    <script src="js/method.js"></script>
+</body>
+</html>
