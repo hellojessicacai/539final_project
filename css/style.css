@@ -196,13 +196,27 @@ button{
     margin-top: 50px;
 }
 
+
+
+
 .origininfoimg img {
     width: 30%;
     margin: 30px;
     border: 50px solid white;
+    transition: transform 0.3s ease-in-out;
 }
 
+.origininfoimg img:hover {
+    transform: scale(1.2);
+}
 
+@media (prefers-reduced-motion: reduce) {
+    .origininfoimg img {
+        width: 30%;
+        margin: 30px;
+        border: 50px solid white;
+    }
+}
 
 
 
